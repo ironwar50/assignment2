@@ -1,0 +1,46 @@
+Git lab tutorial - 2/20/2024
+Account created - 11/17/2018
+
+1. >git commit
+[master 0f2c1c0] Added docs file with status.txt
+ 1 file changed, 12 insertions(+)
+ create mode 100644 docs/status.txt
+>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 32 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 626 bytes | 626.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ironwar50/assignment2.git
+   2e21faa..0f2c1c0  master -> master
+
+2. 8 commits. I used: git log
+
+3. The README.md was last updated with I added my name and fsu id 
+on Tue Feb 20 19:49:22 2024. I used: git log --README.md
+
+4. Branches are used so that someone can work on a project without affecting others.
+It can be used so that changes can be made in stages to limit potential negative affects
+to the main project. 
+
+5. git status tells you whether or not you branch is up to date with the master. git log 
+list commits made.
+
+6. git log --follow Vehicle.h
+
+7. git log --grep="file"
+
+8. Inheritence is the concept that subclass can derive features from base class
+Polymorhpism is the ability of objects of different subclasses being being treated
+similarly because they have the same base class. Encapsilation is conceals certain data 
+while giving access to methods with a class. 
+
+9. In Dictator and Lieutenants, there is a heirarchy with the dictator at the top who is 
+the only one who can push to the blessed Repository. Developers push to Lieutenants which push
+to the Dictator. In the Integration manager workflow, the integration managers handles pushing to 
+the blessed repository. Developer pull to their private and push to their public repositories. 
+
+10. The developer don't have to resolve conflicts with the entire repository just the Lieutenant they
+are connected with. This also helps prevent issues from reaching the main repository.
